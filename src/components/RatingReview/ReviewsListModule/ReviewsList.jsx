@@ -11,7 +11,7 @@ const ReviewsList = ({ reviews, page, loadMoreReviews, allReviewsLoaded, changeS
       <h2> REVIEWS </h2>
       <SortOrderButton changeSortOrder={changeSortOrder} />
       <div className='reviewsListModule reviewsList'>
-        {reviews.map((review) => <ReviewTile review={review} key={review.review_id} />)}
+        {reviews.map((review) => <ReviewTile review={review} key={review.id} />)}
         {!allReviewsLoaded && <button type='button' onClick={loadMoreReviews}>Show more reviews</button>}
       </div>
     </div>

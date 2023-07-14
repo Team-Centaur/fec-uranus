@@ -3,7 +3,7 @@ const apiKey = process.env.REACT_APP_API_KEY;
 
 const getReviews = async (id, sort, page, count) => {
   try {
-    const response = await axios.get(`https://app-hrsei-api.herokuapp.com/api/fec2/hr-rfp/reviews/`,
+    const response = await axios.get('http://localhost:3001/reviews',
     {
       params: {
         product_id: id,
